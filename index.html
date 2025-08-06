@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online shopping</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+         background-color: rgb(195, 209, 220);
+    }
+    h1{
+
+        text-align: center;
+    }
+    .online-shopping{
+        max-width: 800px;
+        background-color: white;
+        margin:10px auto;
+        padding:10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 grey;
+
+    }
+    .product-row{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        align-items: center;
+        margin:10px 0px ;
+
+    }
+    button{
+        background-color: blue;
+        border: none;
+        padding:10px 20px;
+        color:white;
+        border-radius:5px ;
+        cursor: pointer;
+
+
+    }
+    button:hover
+    {
+        background-color: rgb(10, 10, 210);
+    }
+    h2{
+        margin:10px 0 ;
+    }
+    #feedback{
+      
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: white;
+        padding:10px;
+        display: none;
+        color: white;
+
+    }
+    #totalprice{
+        text-align: right;
+        
+
+
+    }
+</style>
+<body>
+    <div class="online-shopping">
+    <h1>online shopping</h1>
+    <p id="feedback"></p>
+    <h2>Available products</h2>
+    <div id="productscontainer">
+    <!-- <div class="product-row">
+        <p>laptop - Rs. 50000</p>
+        <button>Add to cart</button>
+    </div> -->
+    </div>
+    <h2>My cart</h2>
+        <div id="cartcontainer">
+    <!-- <div class="product-row">
+        <p>laptop - Rs. 50000</p>
+        <button>Remove</button>
+    </div> -->
+    </div>
+    <h2 id="totalprice">Rs.100</h2>
+    <h2>Actions</h2>
+    <button id="sortbyprice">Sort by price</button>
+    <button id="ClearCart">clear cart</button>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
