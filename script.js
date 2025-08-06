@@ -118,7 +118,7 @@ function addtocart(id)
 // cartcontainer.insertAdjacentHTML("beforeend",cartitem)
 // feedback.textContent=`${name} is added to the cart`
 
-updateuserfeedback(`${name} is added to the cart`,"success")
+updateuserfeedback(`${prodtoadd.name} is added to the cart`,"success")
 }
 
 function removefromcart(id) {
